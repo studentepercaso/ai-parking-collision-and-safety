@@ -1,0 +1,26 @@
+# Configurazione ByteTrack personalizzata per maggiore stabilità
+# Questo file ottimizza i parametri del tracker per ridurre ID che saltano
+# e migliorare la persistenza delle tracce tra frame successivi
+
+tracker_type: bytetrack
+
+# Soglie per il tracking
+track_high_thresh: 0.6      # Soglia alta per accettare una detection come traccia (aumentata per più stabilità)
+track_low_thresh: 0.2       # Soglia bassa per mantenere tracce deboli (ridotta per mantenere più tracce)
+new_track_thresh: 0.7       # Soglia per creare nuove tracce (aumentata per evitare ID che saltano)
+
+# Buffer e matching
+track_buffer: 50            # Numero di frame per mantenere tracce perse (aumentato per maggiore persistenza)
+match_thresh: 0.8           # Soglia per il matching tra tracce (aumentata per matching più rigoroso)
+
+# Opzioni aggiuntive
+fuse_score: True            # Fonde il punteggio di confidenza nel matching
+proximity_thresh: 0.5       # Soglia di prossimità per matching spaziale
+appearance_thresh: 0.25     # Soglia di apparenza (se usi re-identification)
+
+# Metodo per motion compensation
+gmc_method: 'orb'           # Metodo per Global Motion Compensation
+
+# Re-identification (opzionale, può migliorare stabilità ma rallenta)
+with_reid: False            # Disabilitato per velocità (puoi attivarlo se hai un modello ReID)
+
