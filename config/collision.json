@@ -1,0 +1,21 @@
+{
+  "SPEED_MOVING_THRESHOLD": 2.0,
+  "SPEED_PARKED_THRESHOLD": 0.5,
+  "MIN_DIST_THRESHOLD": 100.0,
+  "IOU_THRESHOLD": 0.005,
+  "SPEED_DROP_FACTOR": 0.7,
+  "NUDGE_DISTANCE": 2.0,
+  "EVENT_DEBOUNCE_SECONDS": 2.0,
+  "HISTORY_FRAMES": 5,
+  "debug_mode": false,
+  "MAX_COLLISION_DISTANCE": 400.0,
+  "enable_person_safety": false,
+  "enable_person_loitering": false,
+  "enable_person_fall": false,
+  "LOITER_SECONDS": 20.0,
+  "LOITER_RADIUS": 120.0,
+  "FALL_ASPECT_RATIO": 0.55,
+  "FALL_SPEED_DROP": 0.45,
+  "FALL_MIN_HEIGHT": 40.0
+}
+

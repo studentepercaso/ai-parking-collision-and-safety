@@ -1,0 +1,9 @@
+{
+  "_comment": "Example RTSP configuration - Copy this file to rtsp.json and add your credentials",
+  "_instructions": "DO NOT commit rtsp.json with real passwords to git!",
+  "ip": "192.168.1.124",
+  "port": "554",
+  "user": "User",
+  "password": "YOUR_PASSWORD_HERE"
+}
+

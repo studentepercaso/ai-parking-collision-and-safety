@@ -1,0 +1,29 @@
+{
+  "_comment": "Example cameras configuration - Copy this file to cameras.json and configure your cameras",
+  "_instructions": "DO NOT commit cameras.json with real RTSP URLs containing passwords!",
+  "nvr_info": {
+    "ip": "192.168.1.124",
+    "port": "554",
+    "user": "User",
+    "last_scan": ""
+  },
+  "cameras": [
+    {
+      "name": "Camera 1 - Main Stream",
+      "url": "rtsp://User:YOUR_PASSWORD@192.168.1.124:554/Streaming/Channels/101",
+      "channel": 1,
+      "stream_type": "Main",
+      "channel_num": 101,
+      "active": true
+    },
+    {
+      "name": "Camera 1 - Sub Stream",
+      "url": "rtsp://User:YOUR_PASSWORD@192.168.1.124:554/Streaming/Channels/102",
+      "channel": 1,
+      "stream_type": "Sub",
+      "channel_num": 102,
+      "active": true
+    }
+  ]
+}
+
